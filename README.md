@@ -7,9 +7,12 @@ Salvador Guimerá
 Desarrolladores:
 
 Diego Raúl Barrionuevo
+
 Roberto Carriero
 
+
 Fundamentos:
+
 Este proyecto surge de muchos años de investigación en el area de las ciencias sociales. Inicialmente motivado por una pregunta recurrente sobre la naturaleza de la cohesion social, como punto de partida para poder pensar en la posibilidad de desarrollar un modelo economico sustentable en el marco de las dinamicas propias del siglo XXI. 
 Pero debido al gran avance de la inteligencia artificial y su consecuente impacto en la vida cotidiana, en la vida laboral y sobre todo en las espectativas que se tienen con respecto al futuro de la fuerza de trabajo se ha hecho imprescindible pensar más concretamente en la necesidad de avanzar en un proyecto de renta basica universal sostenible, responsable y basado en la idea  de crear valor comunitario para sostener un modelo de redistribución social de la riqueza, con un influjo de liquidez constante como prueba de la confianza que este modelo provee a sus usuarios y partnerships.
 Universal Shard Project (USP) es un proyecto orientado a la creación de un sistema de renta basica universal descentralizada cuyo objetivo principal es achicar la brecha de desigualdad economica y social otorgando a sus usuarios el acceso a una plataforma prefigurada para construir comunidad coordinando esfuerzos tanto individuales como colectivos en la constitución de un sistema seguro, equitativo y democratico cuyo crecimiento esta dado por el desarrollo de una narrativa progresiva y coherente, desde un punto de vista economico. 
