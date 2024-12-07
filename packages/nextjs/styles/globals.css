@@ -9,6 +9,12 @@
 
 body {
   min-height: 100vh;
+  background-image: url('./img/fondo1.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
 h1,
@@ -17,10 +23,30 @@ h3,
 h4 {
   margin-bottom: 0.5rem;
   line-height: 1;
+  color: black;
+}
+
+#margin{
+  margin-top: -35px; 
+  position: relative;
+}
+
+#redes{
+  position: "absolute"; 
+        margin-top: -30px; 
+        width: 100%;
 }
 
 p {
   margin: 1rem 0;
+}
+
+#fundamentos {
+  position: absolute;
+  margin-top: 2.5%; 
+  left: 1%; 
+  width: 35%; 
+  text-align: left;
 }
 
 .btn {
