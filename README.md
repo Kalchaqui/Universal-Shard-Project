@@ -111,29 +111,101 @@ Este proyecto plantea una nueva modalidad de **branding**, alineando los interes
 Propósito:
 Coordina la interacción entre los usuarios y los contratos de NFT Llave, tokens RBU, RV y tokens de Facción.
 
-Contratos con los que interactúa:
-NFT Llave: Verifica si el usuario está en una whitelist y permite mintear un NFT Llave.
-RBU Token: Gestiona el reclamo y uso de tokens RBU.
-RV Token: Permite quemar y stakear tokens RV.
-Tokens de Facción: Facilita el minteo de tokens específicos de facción.
-Funciones clave
+Contratos con los que interactúa:<br>
+NFT Llave: Verifica si el usuario está en una whitelist y permite mintear un NFT Llave.<br>
+RBU Token: Gestiona el reclamo y uso de tokens RBU.<br>
+RV Token: Permite quemar y stakear tokens RV.<br>
+Tokens de Facción: Facilita el minteo de tokens específicos de facción.<br><br>
+Funciones clave:<br><br>
 1. Mint de NFT Llave
 Función: mintNFTLlave1
 Requisito: El usuario debe estar en la whitelist y pagar una tarifa fija (MINT_FEE).
-Destino: Los fondos se transfieren a la billetera colateral.
+Destino: Los fondos se transfieren a la billetera colateral.<br><br>
 2. Interacción con Tokens RBU
 Función: routeToRBUToken
 Propósito: Permite a los usuarios reclamar una cantidad de tokens RBU.
-Validación: El usuario debe tener un saldo mínimo de tokens RBU para interactuar.
+Validación: El usuario debe tener un saldo mínimo de tokens RBU para interactuar.<br><br>
 3. Minteo de Tokens de Facción
 Cada token de facción tiene su propia lógica basada en el uso de tokens RV:
-
-AA Token: Quema 1 RV.
-EE Token: Stakea 1 RV.
-AE Token: Quema 0.6 RV y stakea 0.4 RV.
-EA Token: Stakea 0.6 RV y quema 0.4 RV.
+AA Token: Quema 1 RV.<br>
+EE Token: Stakea 1 RV.<br>
+AE Token: Quema 0.6 RV y stakea 0.4 RV.<br>
+EA Token: Stakea 0.6 RV y quema 0.4 RV.<br>
 Eventos:
 UserInteracted: Registra la interacción del usuario, incluyendo el contrato utilizado y el tiempo de cooldown.
 RoutedInteraction: Registra el tipo de acción realizada (reclamo, quema, stakeo) y los valores correspondientes...
 
----
+#### 💻 NFTLlave1
+
+El contrato NFTLlave1 es un contrato ERC721 que permite la creación de un token NFT llamado "NFT Llave". Se utiliza para emitir NFTs con un identificador único y metadatos personalizados. Está diseñado para ser controlado tanto por un propietario como por un contrato "Router" para manejar ciertas funcionalidades.
+
+Propietario y Router:
+
+El contrato tiene un propietario inicial definido en el constructor.
+Integra un router que puede interactuar con el contrato. <br>
+
+Creación de NFTs:
+
+Función createToken: Permite al propietario o router crear un único NFT.
+Función createTokens: Permite crear múltiples NFTs para un destinatario específico.
+Función createTokensForCreator: Emite NFTs personalizados con un nombre para un creador.
+Control y Acceso:
+
+Usa el modificador onlyOwnerOrRouter para restringir acceso a ciertas funciones.
+Todas las funciones principales solo pueden ser llamadas por el propietario o el router.
+Metadatos Personalizados:
+
+Los NFTs pueden configurarse con URIs específicos mediante la función _setTokenUri.
+Relaciones con Otros Contratos
+Este contrato puede integrarse con un Router para coordinar la emisión de NFTs según reglas adicionales o interacción con otros smart contracts.
+Flujo Gráfico
+Roles y Acceso:
+
+🛡 Propietario (Owner): Puede emitir y configurar NFTs.<br>
+🌐 Router: También puede emitir NFTs con las mismas funciones que el propietario.<br>
+Creación de NFTs:
+
+🛠 Llama a las funciones de creación:
+createToken → Crea un NFT único.
+createTokens → Crea varios NFTs para un destinatario.
+createTokensForCreator → Personaliza el NFT para el creador.
+Metadatos:
+
+📂 Define URIs para personalizar cada NFT.
+Uso Común
+Emisión de NFTs para:
+Representar llaves de acceso.
+Usar en sistemas más grandes como tokens de autorización.
+Personalizar con metadatos únicos según el uso.
+Diagrama Simplificado:
+
+![image](https://github.com/user-attachments/assets/ff32453e-fcc4-4ca1-bdbd-b19f2dc6e95c)
+
+
+#### 💻 RBUToken
+
+![image](https://github.com/user-attachments/assets/e62d6002-de89-4554-bd29-87990865b469)
+
+
+#### 💻 RVToken
+
+![image](https://github.com/user-attachments/assets/190985ba-525a-497a-8373-cb7f5aee375f)
+
+#### 💻 Token Facción
+
+![image](https://github.com/user-attachments/assets/d1960936-4194-4c58-af0c-05ae608c1844)
+
+
+
+### 🔧🔧🔧🔧🔧Smart Contract Verificados🔧🔧🔧🔧🔧
+
+https://sepolia.arbiscan.io/address/0x89760d62921E023992e3E6506a589494441EE220#code
+
+https://sepolia.arbiscan.io/address/0xdda36A853A8BE82ebc2Cc12ebee2C5aBb569212b#code
+
+https://sepolia.arbiscan.io/address/0xf8bF1c13fc62e9a09e4e9e549431f950135Dd315#code
+
+https://sepolia.arbiscan.io/address/0xfBa1aEc8DF5124477669AabDa6eaDdad4faDB48a#code
+
+https://sepolia.arbiscan.io/address/0x39cfe1715846d19477779b4C1331e06cC27BCDdc#code
+
