@@ -17,8 +17,28 @@ Roberto Carriero
 Este proyecto surge de muchos años de investigación en el area de las ciencias sociales. Inicialmente motivado por una pregunta recurrente sobre la naturaleza de la cohesion social, como punto de partida para poder pensar en la posibilidad de desarrollar un modelo economico sustentable en el marco de las dinamicas propias del siglo XXI. <br>
 Pero debido al gran avance de la inteligencia artificial y su consecuente impacto en la vida cotidiana, en la vida laboral y sobre todo en las espectativas que se tienen con respecto al futuro de la fuerza de trabajo se ha hecho imprescindible pensar más concretamente en la necesidad de avanzar en un proyecto de renta basica universal sostenible, responsable y basado en la idea  de crear valor comunitario para sostener un modelo de redistribución social de la riqueza, con un influjo de liquidez constante como prueba de la confianza que este modelo provee a sus usuarios y partnerships.<br><br>
 Universal Shard Project (USP) es un proyecto orientado a la creación de un sistema de renta basica universal descentralizada cuyo objetivo principal es achicar la brecha de desigualdad economica y social otorgando a sus usuarios el acceso a una plataforma prefigurada para construir comunidad coordinando esfuerzos tanto individuales como colectivos en la constitución de un sistema seguro, equitativo y democratico cuyo crecimiento esta dado por el desarrollo de una narrativa progresiva y coherente, desde un punto de vista economico. <br>
-Para lograr esta idea hemos desarrollado un  proto eco-sistema basado en seis smart contract secundarios enrutados a traves de un smart contract principal encargado de derivar a los usuarios a los subsiguientes smart contract atendiendo a su rol de recepcionista. A su vez, este smart contract se encargará de registrar, controlar y verificar todas las condiciones de interacción para cada usuario. Estos smart contract han sido cuidadosamente diseñados para estructurar una plataforma de renta basica universal con diferentes niveles de interaccion segun el compromiso de los usuarios. <br><br>
-Si bien el proyecto se enmarca originalmente en impacto social, consideramos con mas impacto enmarcarlo en el topico de gobernanza, ya que toda logica del proyecto está orientada a estructurar grupos de afinidad de acuerdo a tendencias psicologicas y estrategias economicas, clasificando a los usuarios en cuatro facciones de hecho. En este sentido, en este proyecto la DAO debe construirse desde las interacciones coordinadas de los usuarios para posteriormente desbloquear la plataforma de voto y democratizar el proyecto, progresivamente. En concordancia con la constitucion de una narrativa que le de sentido a la necesidad de organizar y coordinar los esfuerzos del conjunto. 
+Para materializar esta idea hemos desarrollado un  sistema basado en seis smart contract secundarios enrutados a traves de un smart contract principal encargado de derivar a los usuarios a los subsiguientes smart contract atendiendo a su rol de recepcionista. A su vez, este smart contract se encargará de registrar, controlar y verificar todas las condiciones de interacción para cada usuario. Estos smart contract han sido cuidadosamente diseñados para estructurar una plataforma de renta basica universal con diferentes niveles de interaccion segun el compromiso de los usuarios. <br>
+Optando estrategicamente el uso de Arbitrum, una red rápida, accesible y económica, USP predefine cómo se distribuyen los recursos, incentivando las microtransacciones y participación activa dentro del sistema. Democratizando la gobernanza progresivamente en fases o etapas que se iran sucediendo en el proceso de creciente coordinación  y cohesión denominado proceso de comunalización, el cual que surgir como emergente social autoorganizativo. En este sentido la DAO operará como un motor económico surgido de la coordinación, donde todas las actividades comunitarias generan valor que es redistribuido equitativamente a través de la renta básica universal.<br><br>
+Si bien el proyecto se enmarca originalmente en impacto social, consideramos con mas impacto enmarcarlo en el topico de gobernanza, ya que toda logica la del proyecto está orientada a estructurar grupos de afinidad de acuerdo a tendencias psicologicas y estrategias economicas, clasificando a los usuarios en cuatro facciones de hecho. En este sentido, en USP La DAO debe desarrollarse desde las interacciones coordinadas de los usuarios para posteriormente desbloquear la plataforma de voto y democratización profunda del proyecto, al tiempo necesario para generar anticuerpos frente a un posible desajuste sistemico. Este hecho democratizante debe estar en concordancia con la constitucion de una narrativa que le de sentido a la necesidad de organizar y coordinar los esfuerzos del conjunto de una forma racional y eficiente.
+Nuestro modelo es una obra de arte de la ingenieria social al servicio de la equidad social. 
+Pilares del Proyecto:
+1.Cohesión Social y Redistribución de Riqueza ( Referente a un propósito Social y creación de Valor Comunitario)
+2.Sustentabilidad en el Siglo XXI ( Referente a un modelo basado en Dinámicas y perspectivas Actuales tales como ReFI y  las nociones de adaptabilidad e integración  a la Era de la IA)
+3.Gobernanza Descentralizada y Gradual(Referente a una estructura basada en roles y Arquetipos que prefiguren una coordinacion gradual y progresiva hacia la constitución de una DAO)
+4.Gamificación y Narrativa Coherente (Referente a Tokens con Funciones Narrativas con limitaciones y condicionamientos para el cumplimiento de desafios semanales y mensuales)
+5.Arquitectura Técnica Innovadora (Referente a un sistema de tokens que representan diferentes grados de compromiso y condiciones de obtención estructurados en una jerarquia de smart contract diseñados desde una perspectiva antropologica.
+6.Verificación y Seguridad (Referente a Métodos de Verificación de humanidad seguros y funciones de logs generalizadas que permiten transparencia en todas las interacciones del sistema)
+7.Incentivos y Economía Circular(Referente al Sistema de Cooldowns y un mercado secundario generado por los diferentes niveles de participación)
+8.Inclusión de Arquetipos Sociales (Referente a la diversidad de las  estrategias Individuales, Grupales y mixtas)
+9.Colaboración Público-Privada (Referente al modelo de Customer Engagement y Partnerships mediante la Segmentación de Mercado Basada en Datos)
+10.Escalabilidad y Evolución (Referente al Crecimiento Progresivo y la integración de NFT promocionales)
+
+Tokens principales:
+
+UST (Universal Shard Token) denominado en los contratos de prueba como RBU: La base de la renta básica, distribuida mediante un sistema de cooldown que incentiva la participación continua.
+EST (Entanglement Shard Token) denominado en los contratos de prueba como RV token: Un token de gobernanza descentralizada, con oferta limitada y características deflacionarias, respaldado por un precio mínimo en ETH.
+Tokens de Facción(Uberis AA-FCT/EE-FCT. Exigus: AE-FCT/EA-FCT) denominado en los contratos de prueba como FCT tokens: Representan tendencias psicológicas y estrategias colectivas, facilitando la afinidad y desbloqueando roles en el ecosistema.
+
 
 
 
@@ -73,8 +93,11 @@ En un futuro, tambien serviran como token de quema para votaciones especificas d
 Como este smart contract está desarrollado en ERC1155 se añadirá la posibilidad de transformar el token de faccion más antiguo que tenga el usuario en un NFT asignandolé un ID unico, estructurado en Fact faction dominante y fact faction recesiva.  <br><br>
 Para transformar este token fungible en no fungible el usuario deberá tener al menos 21 token de faccion para determinar faccion dominante o primaria, de los cuales se quemaran 20 y el 1 restante más antiguo se tranformará en NFT ocupando el rol de faccion dominante o primaria.  <br><br>
 De la misma forma, para transformar este token fungible en no fungible el usuario deberá tener al menos 11 token de faccion para determinar faccion recesiva o secundaria, de los cuales se quemaran 10 y el 1 restante más antiguo se tranformará en NFT ocupando el rol de faccion recesiva o secundaria.  <br><br>
+
 Cada usuario solo podrá tener un nft dominante y un nft recesivo, Para cambiar de faccion sea dominante o recesiva el usuario  deberá consumir la misma cantidad para quemar el nft y poder obtener otro de otra faccion. <br><br>
 Finalmente, todas las combinaciones posibles entre estas cuatro tendencia da un numero de 12 configuraciones entre  facciones dominantes y recesivas
+Gamificación y NFTs:
+Los tokens de facción se convierten en NFTs "sellos" que combinados en dominate y recesivo permiten acceder a mintear un NFT de arquetipo (souldbound), que representan roles sociales en el emergente de gobernanza. Estos NFTs no solo son herramientas económicas, sino también vehículos de reputación y acceso a desafíos colectivos que fortalecen la comunidad.Es decir, cada uno de los doce arquetipos tiene un rol especifico en la gobernanza del sistema.
 
 
 ---
@@ -208,4 +231,3 @@ https://sepolia.arbiscan.io/address/0xf8bF1c13fc62e9a09e4e9e549431f950135Dd315#c
 https://sepolia.arbiscan.io/address/0xfBa1aEc8DF5124477669AabDa6eaDdad4faDB48a#code
 
 https://sepolia.arbiscan.io/address/0x39cfe1715846d19477779b4C1331e06cC27BCDdc#code
-
