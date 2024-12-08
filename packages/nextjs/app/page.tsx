@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import enrutadorData from "../../hardhat/deployments/arbitrumSepolia/Enrutador.json";
+import enrutadorData from "../hardhat/deployments/arbitrumSepolia/Enrutador.json";
 import Fundamentals from "../components/scaffold-eth/Fundamentals";
 import RegisterWhitelistButton from "../components/scaffold-eth/RegisterWhitelistButton";
 import { BrowserProvider, Contract, parseEther } from "ethers";
