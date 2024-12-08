@@ -36,7 +36,7 @@ const RegisterWhitelistButton = () => {
     <>
       {/* Botón principal */}
       <button
-        className="btn bg-white text-black border border-black px-6 py-3 rounded-lg"
+        className="bg-blue-500 text-black px-4 py-3 rounded-lg shadow-md hover:bg-blue-600"
         onClick={() => setIsOpen(true)}
       >
         Solicitar acceso a la Whitelist
