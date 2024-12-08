@@ -64,52 +64,22 @@ Para restablecer el cooldown de este smart contract, el usuario deberá hacer un
 
 ---
 
-### Características de los tokens de facción
+### ✅ Características de los tokens de facción
 
 La caracteristica especifica de este token de faccion de hecho es que será unitario y soulbound, es decir, que no se podrá fraccion y estará ligado a la billetera que lo reclame. <br>
 Aquellos usuarios que hagan stakes de sus EST Token tendran acceso a funciones especiales desplegadas en el futuro para recuperar sus stakes mediante desafios colectivos. Esto está pensado para que aquellos usuarios mas enfocados en tendencias egoistas deban enfocar una minima parte de su esfuerzo a tokens que representen algun grado minimo de altruismo. <br> <br>
 La funcion principal de los tokens de faccion será representar las tendencias psicologicas y/o estrategia economicas de los usuarios estructurando un ranking al que cada token de faccion le corresponde un puntaje de riqueza y reputacion, por un lado y por otro ofreciendo funcionalidades especificas a quienes alcancen lugares altos en el ranking de cada tendencia. <br> <br>
 En un futuro, tambien serviran como token de quema para votaciones especificas de cada faccion, constituyendo un token de "proof of work" cuya utilización demuestra un uso consciente y compromiso con la accion tomada. <br> <br>
-Como este smart contract está desarrollado en ERC1155 se añadirá la posibilidad de transformar el token de faccion más antiguo que tenga el usuario en un NFT asignandolé un ID unico, estructurado en Fact faction dominante y fact faction recesiva.  <br>
-Para transformar este token fungible en no fungible el usuario deberá tener al menos 21 token de faccion para determinar faccion dominante o primaria, de los cuales se quemaran 20 y el 1 restante más antiguo se tranformará en NFT ocupando el rol de faccion dominante o primaria.  <br>
-De la misma forma, para transformar este token fungible en no fungible el usuario deberá tener al menos 11 token de faccion para determinar faccion recesiva o secundaria, de los cuales se quemaran 10 y el 1 restante más antiguo se tranformará en NFT ocupando el rol de faccion recesiva o secundaria.  <br>
-Cada usuario solo podrá tener un nft dominante y un nft recesivo, Para cambiar de faccion sea dominante o recesiva el usuario  deberá consumir la misma cantidad para quemar el nft y poder obtener otro de otra faccion. <br>
+Como este smart contract está desarrollado en ERC1155 se añadirá la posibilidad de transformar el token de faccion más antiguo que tenga el usuario en un NFT asignandolé un ID unico, estructurado en Fact faction dominante y fact faction recesiva.  <br><br>
+Para transformar este token fungible en no fungible el usuario deberá tener al menos 21 token de faccion para determinar faccion dominante o primaria, de los cuales se quemaran 20 y el 1 restante más antiguo se tranformará en NFT ocupando el rol de faccion dominante o primaria.  <br><br>
+De la misma forma, para transformar este token fungible en no fungible el usuario deberá tener al menos 11 token de faccion para determinar faccion recesiva o secundaria, de los cuales se quemaran 10 y el 1 restante más antiguo se tranformará en NFT ocupando el rol de faccion recesiva o secundaria.  <br><br>
+Cada usuario solo podrá tener un nft dominante y un nft recesivo, Para cambiar de faccion sea dominante o recesiva el usuario  deberá consumir la misma cantidad para quemar el nft y poder obtener otro de otra faccion. <br><br>
 Finalmente, todas las combinaciones posibles entre estas cuatro tendencia da un numero de 12 configuraciones entre  facciones dominantes y recesivas
 
----
-
-
-### Smart contract NFT ARQUETIPOS y delegaciones.
-
-En este nivel el proyecto cobra una profundidad significativa al buscar integrar las representaciones fragmentarias iniciales que posibilitan y habilitan a los usuarios que hayan llegado a este nivel, a obtener un NFT ARQUETIPO correspondiente a la configuración de faccion dominante y recesiva seleccionada. 
-Estos NFT arquetipos son tan importantes como el NFT llave que habilita a entrar al sistema pues este nuevo, en particular, será el que habilitará a cada usuario a poder traccionar y coordinar objetivos semanales y mensuales orientados a conducir los esfuerzos colectivos de la red para alcanzar un progreso cuantificable y ganarse, entre todos, el derecho a constituir una organizacion autonoma y descentralizada.
-Desde las posibilidades y actitudes propias de cada arquetipo se busca establecer una estructura fluida con multiples formas de participacion, ponderando desarrollo de estrategias individuales y/o grupales en un marco de auto-gestion y auto organizacion de los recursos necesarios para lograrlo.
-Sumado a las condiciones propias de los cooldowns de los sucesivos reclamos de tokens se añadirá condiciones como la funcion del "reloj del juicio final" que condicionará las voluntades individuales a plegarse a una estrategia grupal para realizar los desafios semanales y mensuales, Segmentando los esfuerzos en base al corto, mediano y largo plazo.
-Finalmente esta estructura de arquetipos o roles sociales representados en NFTs, servirá como puerta de entrada para obtener partnerships de marcas cuyas campañas de marketing esten estructuradas en una segmentación de mercado basada en arquetipos de la personalidad. En este sentido, consideramos crear un espacio dentro de este smart contract para NFTs promocionales de marcas cuyas condiciones de minteo y funciones estaran abiertas a ser modificadas a medida los requerimientos de cada partnership. 
-Esta parte de customer engagement o loyalty constituye la piedra angular de este proyecto pues permite la colaboración entre multiples agentes privados y/o estatales agrandando el ecosistema y el influjo de liquidez.  En este sentido, este proyecto plantea una nueva modalidad del branding alineando los intereses colectivos con los intereses particulares empresariales, haciendo una puesta en valor de la información construida por la red mientras posibilita el acceso a beneficios con las empresas de forma directa. 
 
 ---
 
-### Votaciones y "Proof of Work"
-
-En el futuro, estos tokens servirán como **token de quema** para votaciones específicas de cada facción, constituyendo un token de **"proof of work"** cuya utilización demuestra un uso consciente y compromiso con la acción tomada.
-
----
-
-### ERC1155 y transformación en NFTs
-
-Como este smart contract está desarrollado en **ERC1155**, se añadirá la posibilidad de transformar el **token de facción más antiguo** que tenga el usuario en un **NFT** asignándole un ID único. Se estructurará en **Fact Faction dominante** y **Fact Faction recesiva**.
-
----
-
-### Condiciones para transformar el token en NFT
-
-1. **Facción Dominante**: Para transformar el token fungible en no fungible, el usuario deberá tener al menos **21 tokens de facción** para determinar la facción dominante, de los cuales se quemarán 20 y el 1 restante más antiguo se transformará en NFT.
-2. **Facción Recesiva**: Para transformar el token fungible en no fungible, el usuario deberá tener al menos **11 tokens de facción** para determinar la facción recesiva, de los cuales se quemarán 10 y el 1 restante más antiguo se transformará en NFT.
-
----
-
-### Arquetipos y delegaciones
+### ✅ Arquetipos y delegaciones
 
 A medida que los usuarios avanzan, llegarán a un nivel donde podrán obtener un **NFT ARQUETIPO** correspondiente a la configuración de facción dominante y recesiva seleccionada.
 
@@ -117,22 +87,53 @@ Estos **NFT arquetipos** son cruciales, ya que habilitan a cada usuario para coo
 
 ---
 
-### Desafíos semanales y mensuales
+### ✅ Desafíos semanales y mensuales
 
 Se segmentarán los esfuerzos en base al **corto, mediano y largo plazo**, con el fin de llevar a cabo desafíos semanales y mensuales.
 
 ---
 
-### Customer Engagement y Loyalty
+### ✅ Customer Engagement y Loyalty
 
 La estructura de **arquetipos** o **roles sociales** representados en NFTs servirá como puerta de entrada para obtener **partnerships de marcas**, cuyas campañas de marketing estarán basadas en una segmentación de mercado fundamentada en los arquetipos de la personalidad.
 
 Este aspecto de **customer engagement** o **loyalty** es la piedra angular del proyecto, ya que permite la colaboración entre múltiples agentes privados y/o estatales, agrandando el ecosistema y el influjo de liquidez.
 
+Este proyecto plantea una nueva modalidad de **branding**, alineando los intereses colectivos con los intereses particulares empresariales, haciendo una puesta en valor de la información construida por la red mientras posibilita el acceso a beneficios con las empresas de forma directa.
+
+---
 ---
 
-### Conclusión
+### 🔧🔧🔧🔧🔧Smart Contracts utilizados🔧🔧🔧🔧🔧
 
-Este proyecto plantea una nueva modalidad de **branding**, alineando los intereses colectivos con los intereses particulares empresariales, haciendo una puesta en valor de la información construida por la red mientras posibilita el acceso a beneficios con las empresas de forma directa.
+#### 💻 Smart Contract Enrutador
+
+Propósito:
+Coordina la interacción entre los usuarios y los contratos de NFT Llave, tokens RBU, RV y tokens de Facción.
+
+Contratos con los que interactúa:
+NFT Llave: Verifica si el usuario está en una whitelist y permite mintear un NFT Llave.
+RBU Token: Gestiona el reclamo y uso de tokens RBU.
+RV Token: Permite quemar y stakear tokens RV.
+Tokens de Facción: Facilita el minteo de tokens específicos de facción.
+Funciones clave
+1. Mint de NFT Llave
+Función: mintNFTLlave1
+Requisito: El usuario debe estar en la whitelist y pagar una tarifa fija (MINT_FEE).
+Destino: Los fondos se transfieren a la billetera colateral.
+2. Interacción con Tokens RBU
+Función: routeToRBUToken
+Propósito: Permite a los usuarios reclamar una cantidad de tokens RBU.
+Validación: El usuario debe tener un saldo mínimo de tokens RBU para interactuar.
+3. Minteo de Tokens de Facción
+Cada token de facción tiene su propia lógica basada en el uso de tokens RV:
+
+AA Token: Quema 1 RV.
+EE Token: Stakea 1 RV.
+AE Token: Quema 0.6 RV y stakea 0.4 RV.
+EA Token: Stakea 0.6 RV y quema 0.4 RV.
+Eventos:
+UserInteracted: Registra la interacción del usuario, incluyendo el contrato utilizado y el tiempo de cooldown.
+RoutedInteraction: Registra el tipo de acción realizada (reclamo, quema, stakeo) y los valores correspondientes.
 
 ---
