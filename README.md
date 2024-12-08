@@ -134,6 +134,6 @@ AE Token: Quema 0.6 RV y stakea 0.4 RV.
 EA Token: Stakea 0.6 RV y quema 0.4 RV.
 Eventos:
 UserInteracted: Registra la interacción del usuario, incluyendo el contrato utilizado y el tiempo de cooldown.
-RoutedInteraction: Registra el tipo de acción realizada (reclamo, quema, stakeo) y los valores correspondientes.
+RoutedInteraction: Registra el tipo de acción realizada (reclamo, quema, stakeo) y los valores correspondientes...
 
 ---
