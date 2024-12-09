@@ -12,6 +12,7 @@ Diego Raúl Barrionuevo <br>
 Roberto Carriero
 
 ---
+![Front1](https://github.com/user-attachments/assets/b3b572dd-622a-4649-b718-e7893f99dcbc)
 
 ## 📜 Fundamentos  
 
