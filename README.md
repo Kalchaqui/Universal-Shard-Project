@@ -22,20 +22,22 @@ Universal Shard Project (USP) es un proyecto orientado a la creación de un sist
 Para materializar esta idea hemos desarrollado un sistema basado en seis smart contract secundarios enrutados a través de un smart contract principal encargado de derivar a los usuarios a los subsiguientes smart contract atendiendo a su rol de recepcionista. A su vez, este smart contract se encargará de registrar, controlar y verificar todas las condiciones de interacción para cada usuario. Estos smart contract han sido cuidadosamente diseñados para estructurar una plataforma de renta básica universal con diferentes niveles de interacción según el compromiso de los usuarios. <br>
 Optando estratégicamente el uso de Arbitrum, una red rápida, accesible y económica, USP predefine cómo se distribuyen los recursos, incentivando las micro transacciones y participación activa dentro del sistema. Democratizando la gobernanza progresivamente en fases o etapas que se irán sucediendo en el proceso de creciente coordinación y cohesión denominado proceso de comunalización, el cual que surgir como emergente social autoorganizativo. En este sentido la DAO operará como un motor económico surgido de la coordinación, donde todas las actividades comunitarias generan valor que es redistribuido equitativamente a través de la renta básica universal. <br><br>
 Si bien el proyecto se enmarca originalmente en impacto social, consideramos con más impacto enmarcarlo en el tópico de gobernanza, ya que toda lógica la del proyecto está orientada a estructurar grupos de afinidad de acuerdo a tendencias psicológicas y estrategias económicas, clasificando a los usuarios en cuatro facciones de hecho. En este sentido, en USP La DAO debe desarrollarse desde las interacciones coordinadas de los usuarios para posteriormente desbloquear la plataforma de voto y democratización profunda del proyecto, al tiempo necesario para generar anticuerpos frente a un posible desajuste sistémico. Este hecho democratizante debe estar en concordancia con la constitucion de una narrativa que le de sentido a la necesidad de organizar y coordinar los esfuerzos del conjunto de una forma racional y eficiente.
-Nuestro modelo es una obra de arte de la ingeniería social al servicio de la equidad social. 
-Pilares del Proyecto:
-1.Cohesión Social y Redistribución de Riqueza (Referente a un propósito Social y creación de Valor Comunitario)
-2.Sustentabilidad en el Siglo XXI (Referente a un modelo basado en Dinámicas y perspectivas Actuales tales como ReFI y las nociones de adaptabilidad e integración a la Era de la IA)
-3.Gobernanza Descentralizada y Gradual (Referente a una estructura basada en roles y Arquetipos que prefiguren una coordinación gradual y progresiva hacia la constitución de una DAO)
-4.Gamificación y Narrativa Coherente (Referente a Tokens con Funciones Narrativas con limitaciones y condicionamientos para el cumplimiento de desafíos semanales y mensuales)
-5.Arquitectura Técnica Innovadora (Referente a un sistema de tokens que representan diferentes grados de compromiso y condiciones de obtención estructurados en una jerarquía de smart contract diseñados desde una perspectiva antropológica.
-6.Verificación y Seguridad (Referente a Métodos de Verificación de humanidad seguros y funciones de logs generalizadas que permiten transparencia en todas las interacciones del sistema)
-7.Incentivos y Economía Circular (Referente al Sistema de Cooldowns y un mercado secundario generado por los diferentes niveles de participación)
-8.Inclusión de Arquetipos Sociales (Referente a la diversidad de las estrategias Individuales, Grupales y mixtas)
-9.Colaboración Público-Privada (Referente al modelo de Customer Engagement y Partnerships mediante la Segmentación de Mercado Basada en Datos)
-10.Escalabilidad y Evolución (Referente al Crecimiento Progresivo y la integración de NFT promocionales)
+Nuestro modelo es una obra de arte de la ingeniería social al servicio de la equidad social.<br>
 
-Tokens principales:
+Pilares del Proyecto:
+<br>
+1.Cohesión Social y Redistribución de Riqueza (Referente a un propósito Social y creación de Valor Comunitario)<br>
+2.Sustentabilidad en el Siglo XXI (Referente a un modelo basado en Dinámicas y perspectivas Actuales tales como ReFI y las nociones de adaptabilidad e integración a la Era de la IA)<br>
+3.Gobernanza Descentralizada y Gradual (Referente a una estructura basada en roles y Arquetipos que prefiguren una coordinación gradual y progresiva hacia la constitución de una DAO)<br>
+4.Gamificación y Narrativa Coherente (Referente a Tokens con Funciones Narrativas con limitaciones y condicionamientos para el cumplimiento de desafíos semanales y mensuales)<br>
+5.Arquitectura Técnica Innovadora (Referente a un sistema de tokens que representan diferentes grados de compromiso y condiciones de obtención estructurados en una jerarquía de smart contract diseñados desde una perspectiva antropológica.<br>
+6.Verificación y Seguridad (Referente a Métodos de Verificación de humanidad seguros y funciones de logs generalizadas que permiten transparencia en todas las interacciones del sistema)<br>
+7.Incentivos y Economía Circular (Referente al Sistema de Cooldowns y un mercado secundario generado por los diferentes niveles de participación)<br>
+8.Inclusión de Arquetipos Sociales (Referente a la diversidad de las estrategias Individuales, Grupales y mixtas)<br>
+9.Colaboración Público-Privada (Referente al modelo de Customer Engagement y Partnerships mediante la Segmentación de Mercado Basada en Datos)<br>
+10.Escalabilidad y Evolución (Referente al Crecimiento Progresivo y la integración de NFT promocionales)<br>
+
+Tokens principales:<br>
 
 UST (Universal Shard Token) denominado en los contratos de prueba como RBU: La base de la renta básica, distribuida mediante un sistema de cooldown que incentiva la participación continua.
 EST (Entanglement Shard Token) denominado en los contratos de prueba como RV token: Un token de gobernanza descentralizada, con oferta limitada y características deflacionarias, respaldado por un precio mínimo en ETH.
