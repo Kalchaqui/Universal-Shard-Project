@@ -1,68 +1,51 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.17;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
-contract NFTLLAVE1 is ERC721, Ownable {
-    string private _baseURIextended;
+contract NFTLLAVE1 is ERC1155, Ownable, ReentrancyGuard {
+    uint256 public constant LLAVE1 = 1; // Token ID for LLAVE1
+    uint256 public constant MINT_COST = 0.0005 ether; // Cost to mint
+    mapping(address => bool) public authorizedMinters; // Track authorized wallets
+    mapping(address => bool) public hasMinted; // Track if a wallet has minted
 
-    address public router; // Declare and initialize the Router
-    uint256 private _currentTokenId; // Variable para llevar el control de los tokens emitidos
-    
-    // Constructor de NFTLLAVE1
-    constructor(address initialOwner) ERC721("NFT Llave", "LLAVE") Ownable(0x8869685b9a5bF8a8450B9fE9944E5E3D287d8F77) {
-        
-        // Aquí Ownable no necesita un constructor vacío. 
-        // La dirección del propietario se pasa directamente al constructor de Ownable
-        transferOwnership(initialOwner); // Llama al constructor de Ownable con la dirección del propietario inicial
-        _baseURIextended = "";
-        
-        // Inicializar la dirección del router (puedes dejarla como address(0) si no se desea asignar una dirección aún)
-        router = address(0); // O puedes poner una dirección válida si es necesario
-        _currentTokenId = 0; // Inicializar el contador de tokens
-    }
+    // Constructor with initial owner
+    constructor(address initialOwner) ERC1155("https://blush-fantastic-rooster-314.mypinata.cloud/ipfs/QmbVKgMBpGBLganzS4k1GPQoKXLpaNVy4UBhdESitXH8Kt/{id}.json"
+) Ownable(0x8869685b9a5bF8a8450B9fE9944E5E3D287d8F77) {}
 
-    // Modificador para permitir solo al propietario o al router
-    modifier onlyOwnerOrRouter() {
-        require(msg.sender == owner() || msg.sender == router, "Only the contract's owner or Router can call this");
-        _;
-    }
-
-    // Función para crear un solo token
-    function createToken() external onlyOwnerOrRouter {
-        _safeMint(address(this), _currentTokenId + 1); // Mint a new token for the contract itself
-        _currentTokenId++; // Incrementar el contador de tokens
-    }
-
-    // Función para crear múltiples tokens para un creador con un nombre
-    function createTokensForCreator(string memory name) external onlyOwnerOrRouter {
-        _mintTokenForCreator(name);
-    }
-
-    // Función interna para crear un token con metadata para el creador
-    function _mintTokenForCreator(string memory name) internal {
-        uint256 tokenId = _currentTokenId + 1; // Usar el contador para asignar el siguiente tokenId
-        _safeMint(msg.sender, tokenId); // Mint the token for the creator
-        _setTokenUri(tokenId, name); // Set token URI (assuming you have a _setTokenUri function)
-        _currentTokenId++; // Incrementar el contador de tokens
-    }
-
-    // Función para crear múltiples tokens
-    function createTokens(address recipient, uint256 quantity) external onlyOwnerOrRouter {
-        require(recipient != address(0), "Recipient cannot be the zero address");
-
-        for (uint256 i = 0; i < quantity; i++) {
-            uint256 tokenId = _currentTokenId + 1; // Usar el contador para asignar el siguiente tokenId
-            _safeMint(recipient, tokenId); // Mint the token for the recipient
-            _setTokenUri(tokenId, "some metadata URI"); // Set the URI for the token
-            _currentTokenId++; // Incrementar el contador de tokens
+    // Function to authorize wallets to mint
+    function authorizeWallets(address[] calldata wallets) external onlyOwner {
+        for (uint256 i = 0; i < wallets.length; i++) {
+            authorizedMinters[wallets[i]] = true;
         }
     }
 
-    // Función para establecer URI de un token
-    function _setTokenUri(uint256 tokenId, string memory uri) internal {
-        // Esta función debería establecer el URI de los metadatos para el token correspondiente
+    // Function to revoke authorization
+    function revokeWallets(address[] calldata wallets) external onlyOwner {
+        for (uint256 i = 0; i < wallets.length; i++) {
+            authorizedMinters[wallets[i]] = false;
+        }
     }
+
+    // Mint function
+    function mint() external payable nonReentrant {
+        require(authorizedMinters[msg.sender], "Not authorized to mint");
+        require(!hasMinted[msg.sender], "NFT already minted");
+        require(msg.value == MINT_COST, "Incorrect ETH amount");
+
+        hasMinted[msg.sender] = true; // Mark wallet as minted
+        _mint(msg.sender, LLAVE1, 1, ""); // Mint 1 token of type LLAVE1
+    }
+
+    // Withdraw collected ETH to the owner's wallet
+    function withdraw() external onlyOwner nonReentrant {
+        (bool success, ) = owner().call{value: address(this).balance}("");
+        require(success, "Withdrawal failed");
+    }
+
+    // Fallback to receive ETH
+    receive() external payable {}
+    fallback() external payable {}
 }
